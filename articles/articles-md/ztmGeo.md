@@ -3,9 +3,9 @@
 # V1
 ## discovery
 
-around march 2021 I was looking around the gov open data website and discovered that the city of Warsaw (Which is where i live) has an open [API](http://api.um.warszawa.pl/).
+around March 2021 I was looking around the gov open data website and discovered that the city of Warsaw (Which is where I live) has an open [API](http://api.um.warszawa.pl/).
 
-Resource that I found the most interesting was obviously [buses and trams online](https://api.um.warszawa.pl/files/9fae6f84-4c81-476e-8450-6755c8451ccf.pdf).
+The resource that I found the most interesting was [buses and trams online](https://api.um.warszawa.pl/files/9fae6f84-4c81-476e-8450-6755c8451ccf.pdf).
 
 ## first app
 
@@ -15,8 +15,8 @@ It worked fine, but I thought that websites are way cooler than console applicat
 
 ## first website
 
-I decided to use Express in which i had almost no experience at the time,
-so i started watching tutorials.
+I decided to use Express in which I had almost no experience at the time,
+so I started watching tutorials.
 
 After some time I've finally made the first website.
 
@@ -28,20 +28,20 @@ It definitely wasn't much, but I had to start somehow.
 
 The best way to display a list of geographical coordinates is a map, so that's what I added.
 
-I went with mapbox, mainly because of [this video](https://youtu.be/OySigNMXOZU).
+I went with Mapbox, mainly because of [this video](https://youtu.be/OySigNMXOZU).
 
 after some time, I finally got the data onto maps!
 
 ## adding features
 
-One of the first thigs I added was searching for lines
+One of the first things I added was searching for lines
 
 Another one was a dropdown list of all the results found
 
-The most challanging feature i added was getting bus details
+The most challenging feature I added was getting bus details
 
 ### Getting bus details
-The most challanging part of this was that there's no API for that details, so i had to scrape, i used jsdom.
+The most challenging part of this was that there's no API for that details, so I had to scrape, I used jsdom.
 To get bus details, I had to:
 
 >do a GET request to https://www.ztm.waw.pl/en/vehicle-database/ searching for a bus of a certain id
@@ -70,7 +70,7 @@ Because I wanted to learn TypeScript
 
 ### When? 
 
-around end of June 2021
+around the end of June 2021
 
 ## Redoing
 
@@ -79,7 +79,7 @@ redoing ZtmGeo in typescript was pretty simple, mainly because programming is mo
 ## Improving
 
 This time I made it so you can also track trams,
-decided to make it dark themed,
+decided to make it dark-themed,
 removed unnecessary things,
 making points on map clickable,
 making it a PWA
