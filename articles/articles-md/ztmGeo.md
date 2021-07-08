@@ -10,7 +10,7 @@ The resource that I found the most interesting was [buses and trams online](http
 
 The first thing I did, was creating a NodeJS app that fetches the API for buses then logs in console links to their positions on google maps. 
 
-It worked fine, but I thought that websites are way cooler than console applications and that maps are better than links to maps, so I started making them.
+It worked fine, but I thought that websites are way cooler than console applications and that maps are better than links to maps, so I started making.
 
 ## first website
 
