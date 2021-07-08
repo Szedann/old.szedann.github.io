@@ -81,12 +81,12 @@ main > div, main a > div {
   padding: 10px;
 }
 
-main > div > h2, main a > div > h2 {
+main > div > h1, main > div h2, main a > div > h1, main a > div h2 {
   margin: .3rem 0;
   padding-bottom: .2rem;
 }
 
-main > div > h2:not(:last-child), main a > div > h2:not(:last-child) {
+main > div > h1:not(:last-child), main > div h2:not(:last-child), main a > div > h1:not(:last-child), main a > div h2:not(:last-child) {
   border-bottom: 2px groove #dadada;
 }
 
@@ -95,86 +95,8 @@ main > div img, main a > div img {
   border: 2px inset #dadada;
 }
 
-main > .post div {
-  white-space: pre-wrap;
-}
-
 main > .header {
   text-align: center;
-}
-
-main > .create-post h2 {
-  margin: .3rem 0;
-  padding-bottom: .2rem;
-  border-bottom: 2px ridge #dadada;
-}
-
-main > .create-post > form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-main > .create-post > form textarea {
-  resize: none;
-}
-
-main > .create-post > form * {
-  outline: none;
-  margin-top: 3px;
-  font-family: inherit;
-}
-
-main > .profile_info {
-  text-align: center;
-}
-
-main > .edit-profile {
-  text-align: center;
-}
-
-main > .edit-profile form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main .make-public label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
-main > .edit-bio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-main > .edit-bio textarea {
-  resize: none;
 }
 
 textarea, input[type="text"] {
@@ -205,15 +127,17 @@ input[type="checkbox"]:checked::after {
 
 blockquote {
   color: white;
-  padding: 5px;
   display: inline-block;
   margin: 0;
-  background-color: #0006;
-  border-left: 2px ridge gray;
 }
 
 blockquote p {
-  display: inline;
+  display: block;
+  background-color: #0006;
+  padding: 5px;
+  margin: 5px;
+  margin-left: 0;
+  border-left: 2px ridge gray;
 }
 
 ul {
