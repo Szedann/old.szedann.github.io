@@ -4,8 +4,7 @@
         "description": "website made for tracking public transport in Warsaw",
         "links": {
             "article": "/article/index.html?title=making%20ZtmGeo",
-            "GitHub repo of V1": "https://github.com/Szedann/ztmGeo/",
-            "website": "https://sandown.live/"
+            "GitHub repo of V1": "https://github.com/Szedann/ztmGeo/"
         }
     }
 ]
