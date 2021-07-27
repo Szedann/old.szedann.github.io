@@ -43,13 +43,39 @@ header div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2em 1em;
   width: 100%;
-  max-width: 1000px;
+  max-width: 900px;
 }
 
-header h1 {
+header div h1 {
   margin: 0;
+}
+
+header div nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header div nav a {
+  color: white;
+  text-decoration: none;
+  margin: .1em;
+  opacity: .6;
+  -webkit-transition: opacity 200ms, text-shadow 200ms;
+  transition: opacity 200ms, text-shadow 200ms;
+}
+
+header div nav a:hover {
+  opacity: 1;
+  text-shadow: 0 0 1em #0099ff;
 }
 
 code {
@@ -124,6 +150,24 @@ main > fieldset div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0002;
+  border-top: 2px solid #82828280;
+}
+
+footer p {
+  margin: 0.1em;
 }
 
 .button {

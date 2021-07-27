@@ -32,12 +32,28 @@ header{
     justify-content: center;
     div{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 2em 1em;
         width: 100%;
-        max-width: 1000px;
-    }
-    h1{
-        margin: 0;
+        max-width: 900px;
+        h1{
+            margin: 0;
+        }
+        nav{
+            display: flex;
+            a{
+                color: white;
+                text-decoration: none;
+                margin: .1em;
+                opacity: .6;
+                transition: opacity 200ms, text-shadow 200ms;
+                &:hover{
+                    opacity: 1;
+                    text-shadow: 0 0 1em rgb(0, 153, 255);
+                }
+            }
+        }
     }
 }
 
@@ -88,6 +104,20 @@ main{
         }
     }
 }
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0002;
+    border-top: 2px solid #82828280;
+    p{
+        margin: 0.1em;
+    }
+}
+
 .button{
     display: inline-block;
     color: white;
