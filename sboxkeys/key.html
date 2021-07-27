@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-        setTimeout(()=>{
-            const rand = Math.random()
-            console.log(rand)
-            window.location.href = '/sboxkeys/key.html'
-        }, 2000)
-    </script>
+    <script src="js/script.js" defer></script>
     <title>s&box key generator</title>
+    <script>
+        window.onload = () => {
+            const code = steamKeygen()
+            document.getElementById('code').innerText = code
+        }
+    </script>
 </head>
 <body>
     <img class="website-background" src="images/bg.jpg">
@@ -25,8 +25,9 @@
     </header>
     <main>
         <div>
-            <h1>Hold up...</h1>
-            <p>We are verifying your browser</p>
+            <h1>Here's your key!</h1>
+            <code id="code" onmousedown="copy()">AAAAA-BBBBB-CCCCC</code>
+            <input type="button" value="copy" onmousedown="copy()">
         </div>
     </main>
 </body>
