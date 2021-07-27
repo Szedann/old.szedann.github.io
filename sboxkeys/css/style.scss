@@ -57,12 +57,18 @@ header{
     }
 }
 
-code{
+#code{
     display: inline-block;
     padding: .4em;
     background-color: #111;
     border-radius: .2em;
     border: 1px solid #ffffff80;
+    color: white;
+    text-align: center;
+    font-family: inherit;
+    padding: .1em;
+    font-family: monospace;
+    font-size: 1em;
 }
 
 main{
