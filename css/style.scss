@@ -1,11 +1,19 @@
+@font-face {
+    font-family: "MS Sans Serif 95";
+    src: url("../fonts/MS_Sans_Serif_8pt.ttf") format("truetype"),
+  }
+
 :root{
     --bg-color: #007E7D;
     --txt-color: black;
 }
 
 body{
-    font-family: monospace;
+    font-family: monospace, "MS Sans Serif";
     background-color: var(--bg-color);
+    font-size: 8pt;
+    font-smooth: never;
+    // -webkit-font-smoothing: none;
     color: var(--txt-color);
     margin: 0;
 }
