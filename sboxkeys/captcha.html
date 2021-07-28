@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+    <script src="js/captcha.js" defer></script>
     <title>s&box key generator</title>
 </head>
 <body>
@@ -21,10 +22,17 @@
         </div>
     </header>
     <main>
-        <div >
-            <h1>Generate a key</h1>
+        <div>
+            <h1>Are you a robot?</h1>
             <div>
-                <a class="button" href="keygen.html">Generate</a>
+                <div class="captcha">
+                    <div id="verify-inputs">
+                        <input type="checkbox" id="verify-checkbox">
+                        <span>I'm not a robot</span>
+                    </div>
+                    <input type="button" value="Verify" id="verify-button">
+                    <div id="verify-progress"></div>
+                </div>
             </div>
         </div>
     </main>
