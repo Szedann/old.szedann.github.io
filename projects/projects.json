@@ -9,6 +9,9 @@
     },
     {
         "title": "s&portfolio style improvements",
-        "description": "style improvements for"
+        "description": "style improvements for sboxportfolio.com",
+        "links": {
+            "website": "https://sboxportfolio.com"
+        }
     }
 ]
